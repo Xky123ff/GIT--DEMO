@@ -1,0 +1,1 @@
+& C:/Users/Miniforge/envs/XXY/python.exe e:/桌面/GIT--DEMO/Chiral_edge/test（拓扑，m变化）.py
