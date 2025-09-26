@@ -5,8 +5,8 @@ Welcome you download those, point out the errors, and improve the methods!
 2）为笔记的图片引用
 3）Python基础语法
 
-4）均为MTI模型 ➡️ QAHE
-5）仅仅只是围一圈，为两个不同的Hamiltinion ➡️ 仅仅会观察到边缘态
-6）center为MTI（DELT≠0，D为负数），leads为EG ➡️ QSHE
+4）均为MTI（Delta=0） ➡️ QAHE
+5）center是中空的 ➡️ 此系统的态一定不会再bulk中
+6）均为MTI（Delta<0） ➡️ QSHE(六端口与十二端口)
 7）
 8）

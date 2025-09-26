@@ -11,86 +11,59 @@
 
 \preprint{APS/123-QED}
 
-\title{Principles and Key Applications of the Throttling Process: An In-depth Thermodynamic Analysis}
+\title{On the Factors Influencing the Quantization Accuracy in the Quantum Anomalous Hall Effect}
 
-\author{Sijie Chen     }
+\author{Xiyang Xu}
 % \email{Your-Email@university.edu}
 \affiliation{
- Department of Physics, [Your University], [Your City, Postal Code], [Your Country]
+ Department of Physics, [China Three Gorges University], [Yichang, 443000], [China]
 }
 
-\date{\today}
+\date{2025 September 22}
 
 \begin{abstract}
-The throttling process, an isenthalpic expansion of a fluid, is a fundamental concept in thermodynamics with wide-ranging technological applications. Central to these applications is the Joule-Thomson (J-T) effect, which describes the temperature change of a real gas during such an expansion. This paper provides a comprehensive review of the throttling process, beginning with its thermodynamic principles and the microscopic origins of the J-T effect. We discuss the critical role of the inversion temperature in determining whether throttling leads to cooling or heating. Subsequently, we explore its core applications in refrigeration, air conditioning, and gas liquefaction, detailing the vapor-compression cycle and comparing the Linde-Hampson and Claude cycles. Further applications in cryogenics, including cooling for superconducting and quantum computing systems, and in industrial process control are also examined. The paper concludes with a summary of the process's significance and a perspective on future developments, such as the search for new refrigerants and its role in emerging fields like hydrogen energy and carbon capture.
+For the quantum anomalous Hall effect, why is the experimentally observed quantized Hall resistance accompanied by a non-zero longitudinal resistance?Currently,multiple mechanisms have been proposed to explain this phenomenon,including thermal activation of bulk carriers,variable range hopping in the presence of disorder,and edge state backscattering due to magnetic impurities.However,a comprehensive understanding remains elusive.Additionally,the role of sample geometry and contact configuration in influencing the measured resistances is not fully understood.Further experimental and theoretical investigations are necessary to clarify these issues and achieve a complete understanding of transport phenomena in quantum anomalous Hall systems.
 \end{abstract}
 
 \maketitle
 
-\section{I. Introduction and Fundamental Principles}
+\section{I. Different mechanisms }
 
-\subsection{A. The Throttling Process}
-Macroscopically, the throttling process is defined as the expansion of a fluid through a restriction—such as a valve, a porous plug, or another obstruction—under adiabatic conditions, resulting in a significant pressure drop. To analyze this thermodynamically, we consider a steady-state flow system. The generalized form of the first law of thermodynamics for an open system is:
-$h_1 + \frac{v_1^2}{2} + gz_1 + q = h_2 + \frac{v_2^2}{2} + gz_2 + w_s$
-where $h$ is the specific enthalpy, $v$ is the velocity, $z$ is the elevation, $q$ is the heat transfer per unit mass, and $w_s$ is the shaft work per unit mass.
 
-During a typical throttling process, several conditions are met: the process is adiabatic ($q=0$), no shaft work is performed ($w_s=0$), and the changes in macroscopic kinetic and potential energy are generally negligible ($\Delta E_k \approx 0, \Delta E_p \approx 0$). This simplifies the energy balance to a core conclusion: the enthalpy is conserved ($h_1 \approx h_2$). Therefore, the throttling process is fundamentally an \textit{isenthalpic} process.
+In an ideal quantum anomalous Hall (QAHE) insulator, the bulk is fully insulating, and charge transport is exclusively carried by one-dimensional (1D) chiral edge states. These states are topologically protected from backscattering, which should result in a strictly zero longitudinal resistance ($R_{xx}=0$) and a Hall resistance ($R_{xy}$) precisely quantized to $h/e^2$. However, this ideal scenario is disrupted by material imperfections in realistic systems, such as magnetically doped topological insulators. The physical origins of the experimentally observed non-zero $R_{xx}$ are a central topic of current research. The main theoretical explanations can be categorized as follows.
 
-\subsection{B. The Joule-Thomson Effect}
-A key phenomenon observed during throttling is the Joule-Thomson (J-T) effect, where a real gas experiences a change in temperature upon expansion. This behavior is quantified by the Joule-Thomson coefficient, $\mu_{JT}$:
-$\mu_{JT} = \left(\frac{\partial T}{\partial P}\right)_H$
-The sign of this coefficient determines the outcome:
-\begin{itemize}
-    \item $\mu_{JT} > 0$: The gas cools upon expansion (throttling refrigeration), which is the basis for most applications.
-    \item $\mu_{JT} < 0$: The gas heats upon expansion (throttling heating).
-    \item $\mu_{JT} = 0$: The temperature remains constant at an "inversion point."
-\end{itemize}
-It is crucial to note that for an ideal gas, enthalpy is a function of temperature only. Since the throttling process is isenthalpic, the temperature of an ideal gas does not change, and thus $\mu_{JT} = 0$.
+\subsection{A. Dissipation from Bulk Inhomogeneity}
 
-\subsection{C. Microscopic Interpretation of the J-T Effect}
-The J-T effect is rooted in the behavior of real gases, specifically the interplay of intermolecular forces and the finite volume of molecules. As a gas expands during throttling, the average distance between molecules increases.
-When intermolecular attractive forces are dominant, molecules must do work to overcome these forces as they move apart. This work is supplied by the internal energy of the gas, leading to a decrease in the average kinetic energy of the molecules and, macroscopically, a drop in temperature ($\mu_{JT}>0$).
-Conversely, at very high pressures where molecules are close together, repulsive forces dominate. Expansion reduces these repulsive interactions, converting potential energy into kinetic energy, which results in a temperature increase ($\mu_{JT}<0$).
-Ultimately, whether the J-T effect causes cooling or heating depends on the relative strength of attractive and repulsive forces at a given state.
+This is one of the most widely accepted models. It assumes that realistic QAHE materials are far from homogeneous.
 
-\subsection{D. Inversion Temperature and Cooling Conditions}
-For every real gas, there exists an "inversion curve" on a T-P diagram, which is the locus of all points where $\mu_{JT}=0$. Within this curve, $\mu_{JT}>0$ and throttling results in cooling. Outside the curve, $\mu_{JT}<0$ and throttling causes heating.
-The maximum inversion temperature is the highest temperature at which throttling can produce a cooling effect. For a gas to be cooled by expansion, its initial temperature must be below this maximum. For gases like nitrogen, oxygen, and argon, this temperature is well above ambient conditions, allowing them to be easily liquefied via throttling. However, for gases like hydrogen ($T_{max} \approx 205$ K) and helium ($T_{max} \approx 43$ K), the maximum inversion temperature is very low. At room temperature, they will heat up upon throttling. Therefore, they must be pre-cooled to below their respective inversion temperatures before throttling can be used for liquefaction.
+Charge Puddles due to factors like the substrate, material defects, or the random distribution of magnetic dopants (e.g., Cr or V), the electrostatic potential within the material fluctuates, leading to the formation of localized electron and hole "puddles." These puddles are local conductive regions. Although surrounded by the insulating QAHE "sea," they can serve as intermediate "stepping stones" for carriers to traverse the bulk from one edge to another.
+
+Physical Mechanism Electrons can leverage these bulk localized states to tunnel between opposite edges via a process known as \textbf{variable-range hopping (VRH)}. This process effectively breaks the perfect 1D conduction of the edge channels, constitutes a form of backscattering, and consequently generates a non-zero longitudinal resistance $R_{xx}$ while causing deviations from perfect Hall quantization. Temperature-dependent transport measurements, which often reveal characteristic hopping behavior for $R_{xx}$, provide strong support for this model.
+
+\subsection{B. Edge-State Related Scattering Mechanisms}
+
+This category of theories focuses on imperfections associated with the edge states themselves, even assuming an ideal insulating bulk.
+
+Direct Inter-Edge Tunneling if the sample is sufficiently narrow, or if a geometric constriction brings two counter-propagating edge states into close proximity, direct quantum tunneling between them can occur. This provides a clear channel for backscattering.
+
+Edge Disorder and Reconstruction The physical edges of a sample are not atomically smooth. Disorder or atomic reconstruction at the edges can create localized charge traps or puddles nearby. Propagating electrons in the edge channels can be captured and subsequently released by these localized states, a process that can effectively scatter them into the counter-propagating channel, thus contributing to dissipation.
+
+\subsection{C. Percolation Model}
+
+This model can be viewed as a more sophisticated extension of the bulk inhomogeneity theory, describing the phenomenon in the context of a topological phase transition.
+
+Topological Domains Inhomogeneities in magnetic doping can cause regions with different Chern numbers (e.g., $C=+1$, $C=-1$, and $C=0$) to coexist within the sample. These regions are known as topological domains, and conducting chiral states exist at the domain walls separating them.
+
+Physical Mechanism As the Fermi level is tuned, for instance by a gate voltage, the size and connectivity of these domains change. Near the topological phase transition, a continuous path of trivial ($C=0$) or oppositely chiral ($C=-1$) domains may form, spanning the sample and connecting the two edges. This "percolation path" effectively shorts the bulk, leading to a peak in $R_{xx}$. Even deep within the QAHE plateau regime, isolated non-quantized puddles may persist. While they do not form a percolation network, they still contribute to a finite residual $R_{xx}$ through hopping transport, consistent with the bulk inhomogeneity model.
+
+
+
 
 \section{II. Core Application Areas}
 
-\subsection{A. Refrigeration and Air Conditioning}
-The throttling process is an indispensable component of the vapor-compression refrigeration cycle, where it serves the critical function of reducing both pressure and temperature. The cycle consists of four main stages:
-\begin{enumerate}
-    \item \textbf{Compression:} A compressor performs work on a low-pressure, low-temperature refrigerant vapor, converting it into a high-pressure, high-temperature vapor.
-    \item \textbf{Condensation:} The hot vapor releases heat to the surroundings in a condenser, transforming into a high-pressure liquid.
-    \item \textbf{Throttling:} The high-pressure liquid flows through an expansion valve or capillary tube. This is an isenthalpic process where the pressure and temperature drop sharply, resulting in a low-temperature, low-pressure liquid-vapor mixture.
-    \item \textbf{Evaporation:} The cold mixture absorbs heat from the space to be cooled in an evaporator, causing the refrigerant to vaporize and thus producing the desired cooling effect.
-\end{enumerate}
-This cycle is the foundation for nearly all modern refrigeration and air conditioning systems, from household refrigerators to large-scale industrial chillers.
-
-\subsection{B. Gas Liquefaction}
-The liquefaction of gases is another major application of the throttling process, particularly when combined with regenerative cooling. The Linde-Hampson cycle exemplifies this principle. In this cycle, high-pressure gas is first pre-cooled and then expanded through a throttling valve, causing its temperature to drop due to the J-T effect. Critically, this colder, low-pressure gas is then passed through a heat exchanger to pre-cool the incoming high-pressure gas before it reaches the valve. This regenerative process creates a cascading cooling effect, progressively lowering the temperature in each cycle until it drops below the boiling point and the gas begins to liquefy. This technology is fundamental to the industrial production of liquefied gases such as liquid nitrogen ($LN_2$), liquid oxygen ($LO_X$), and liquefied natural gas (LNG).
-
-\subsection{C. The Claude Cycle: An Improvement for Gas Liquefaction}
-While effective, the Linde-Hampson cycle relies solely on the J-T effect and can be inefficient. The Claude cycle offers a significant improvement by incorporating an expansion engine. In this system, a portion of the high-pressure gas is diverted to an expander, where it does work and undergoes a near-isentropic expansion, leading to a much more significant temperature drop than throttling alone. This extremely cold gas is then used to pre-cool the remaining stream of gas before it is throttled. This dual cooling mechanism—combining work-producing expansion with J-T expansion—greatly enhances the efficiency of the liquefaction process. Modern large-scale gas liquefaction plants predominantly use the Claude cycle or its variants.
-
 \section{III. Other Significant Applications}
 
-\subsection{A. Cryogenics}
-In the field of cryogenics, J-T coolers are vital. These are often compact, vibration-free refrigerators built around a throttling process, capable of reaching very low temperatures (e.g., the liquid helium range at 4K). Their simplicity and reliability make them essential for a variety of advanced technologies. They are used to cool superconducting magnets in MRI machines and particle accelerators, reduce thermal noise in infrared detectors for space telescopes and military applications, and provide the ultra-low temperature environments required for operating superconducting quantum computers.
-
-\subsection{B. Industrial Process and Energy Systems}
-The throttling process is also widely used for control and separation in industrial settings. In power plants, throttling valves are used to regulate the flow and pressure of steam entering turbines, thereby controlling power output. In natural gas processing, the J-T effect is employed to cool raw natural gas, causing heavier hydrocarbons (natural gas liquids, or NGLs) to condense and separate out. Furthermore, pressure safety valves, which protect vessels from overpressure, function as throttling devices during emergency venting.
-
 \section{IV. Conclusion and Outlook}
-In summary, the throttling process is a cornerstone of applied thermodynamics. Its utility stems from the Joule-Thomson effect in real gases, which provides a practical mechanism for achieving significant temperature changes. It serves as the critical link between high-pressure and low-pressure domains in countless thermodynamic cycles. From the refrigerators in our homes to the advanced cryogenic systems enabling quantum computing and space exploration, the impact of this seemingly simple process is profound.
 
-Looking ahead, research continues to evolve. There is an ongoing search for new, environmentally friendly refrigerants and advanced porous materials with enhanced J-T cooling effects for micro-refrigeration. The integration of throttling with other cooling technologies, such as magnetic or acoustic refrigeration, may lead to novel hybrid cycles with superior efficiency. Moreover, the throttling process will play an indispensable role in emerging energy sectors, particularly in the large-scale liquefaction, storage, and transport of hydrogen, and in carbon capture technologies where $CO_2$ must be liquefied for sequestration. The simple principle of isenthalpic expansion continues to be a key enabler of both current and future technologies.
-
-% --- Bibliography ---
-% \begin{thebibliography}{}
-% \bibitem{sample_ref} A. Author, B. Author, and C. Author, Phys. Rev. Lett. 100, 010101 (2020).
-% \end{thebibliography}
 
 \end{document}
